@@ -1,0 +1,12 @@
+/* Add application styles & imports to this file! */
+
+table {
+  padding: 50px 10px 0px 50px;
+  width: 100%;
+
+  
+}
+
+mat-header-cell, mat-cell {
+  justify-content: center !important;
+}

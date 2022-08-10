@@ -1,0 +1,24 @@
+<div class="example-viewport">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+  <!-- Attr Column -->
+  <ng-container matColumnDef="Attribute">
+    <th mat-header-cell *matHeaderCellDef>Atribute</th>
+    <td mat-cell *matCellDef="let element">{{element.attribute}}</td>
+  </ng-container>
+
+  <!-- Val Column -->
+  <ng-container matColumnDef="Value">
+    <th mat-header-cell *matHeaderCellDef>Value</th>
+    <td mat-cell *matCellDef="let element">{{element.value}}</td>
+  </ng-container>
+
+  <!-- Desc Column -->
+  <ng-container matColumnDef="Description">
+    <th mat-header-cell *matHeaderCellDef>Description</th>
+    <td mat-cell *matCellDef="let element">{{element.description}}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+</div>
